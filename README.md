@@ -114,6 +114,6 @@ bash tools/dist_test.sh \
 tensorboard --logdir workdirs/.../logs --port=6006
 ```
 
-## 预训练模型参数
+## 训练模型
 
-本项目的预训练模型已上传至以下链接:
+本项目的训练模型已上传至以下链接:
