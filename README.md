@@ -117,6 +117,3 @@ tensorboard --logdir workdirs/.../logs --port=6006
 ## 预训练模型参数
 
 本项目的预训练模型已上传至以下链接:
-
-- 微调模型: 
-- 从零训练模型: 
