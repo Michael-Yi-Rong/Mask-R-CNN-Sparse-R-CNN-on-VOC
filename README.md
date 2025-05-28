@@ -26,6 +26,7 @@ Mask-R-CNN-Sparse-R-CNN-on-VOC/
 │
 ├── Other MMDetection Files & Folders...
 │
+├── inference.py                 # 推理脚本
 ├── voc2coco.py                  # VOC2COCO脚本
 ├── requirements.txt             # 环境配置
 └── README.md                    # 项目说明
@@ -116,6 +117,11 @@ bash tools/dist_test.sh \
 
 ```bash
 tensorboard --logdir workdirs/.../logs --port=6006
+```
+## 推理过程
+
+```bash
+python inference.py
 ```
 
 ## 训练模型
