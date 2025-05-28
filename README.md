@@ -85,9 +85,14 @@ bash tools/dist_train.sh \
   configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py \
   8
 
-bash tools/dist_train.sh \
-  configs_voc/sparse_rcnn/sparse-rcnn_r50_fpn_1x_coco.py \
-  8
+python -m torch.distributed.launch \
+    --nproc_per_node=8 \
+    --master_port=29500 \
+    tools/train.py \
+    /SSD_DISK/users/rongyi/projects/mmdetection/configs_voc/sparse_rcnn/sparse-rcnn_r50_fpn_1x_coco.py \
+    --work-dir work_dirs/sparse-rcnn_voc \
+    --launcher pytorch \
+    --cfg-options "data.samples_per_gpu=2" "data.workers_per_gpu=8"
 ```
 
 ## 模型测试
