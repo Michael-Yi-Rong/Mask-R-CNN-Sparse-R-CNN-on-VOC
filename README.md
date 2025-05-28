@@ -107,7 +107,7 @@ bash tools/dist_test.sh \
    work_dirs/mask-rcnn_r50_fpn_1x_coco/epoch_50.pth \
    8 \
    --out work_dirs/results.pkl \
-   --show-dir work_dirs/show_results/ \
+   --show-dir work_dirs/show_results/
 ```
 
 ## 可视化
