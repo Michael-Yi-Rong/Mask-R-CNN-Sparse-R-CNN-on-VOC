@@ -93,7 +93,8 @@ bash tools/dist_train.sh \
 
 ```bash
 python tools/test.py configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py
-python tools/test.py configs_voc/sparse_rcnn/sparse-rcnn_r50_fpn_1x_coco.py work_dirs/mask-rcnn_r50_fpn_1x_coco/epoch_50.pth
+python tools/test.py configs_voc/sparse_rcnn/sparse-rcnn_r50_fpn_1x_coco.py work_dirs/mask-rcnn_r50_fpn_1x_coco/epoch_50.pth \
+  --out work_dirs/results.pkl --show-dir work_dirs/show_results/ \
 ```
 
 ```bash
@@ -104,7 +105,9 @@ bash tools/dist_test.sh \
 bash tools/dist_test.sh \
    configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py \
    work_dirs/mask-rcnn_r50_fpn_1x_coco/epoch_50.pth \
-   8 
+   8 \
+   --out work_dirs/results.pkl \
+   --show-dir work_dirs/show_results/ \
 ```
 
 ## 可视化
