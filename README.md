@@ -96,6 +96,8 @@ bash tools/dist_train.sh \
 
 ## 模型测试
 
+- 单GPU
+
 ```bash
 python tools/test.py configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py
 python tools/test.py configs_voc/sparse_rcnn/sparse-rcnn_r50_fpn_1x_coco.py work_dirs/mask-rcnn_r50_fpn_1x_coco/epoch_50.pth \
@@ -107,6 +109,9 @@ bash tools/dist_test.sh \
   configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py \
   8
 ```
+
+- 分布式训练(DDP)
+
 ```bash
 bash tools/dist_test.sh \
    configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py \
