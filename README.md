@@ -74,6 +74,8 @@ bash train.sh
 ```bash
 # single gpu training
 python tools/train.py configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py
+```
+```bash
 python tools/train.py configs_voc/sparse_rcnn/sparse-rcnn_r50_fpn_1x_coco.py
 ```
 
@@ -84,7 +86,8 @@ python tools/train.py configs_voc/sparse_rcnn/sparse-rcnn_r50_fpn_1x_coco.py
 bash tools/dist_train.sh \
   configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py \
   8
-
+```
+```bash
 python -m torch.distributed.launch \
     --nproc_per_node=8 \
     --master_port=29500 \
@@ -107,7 +110,8 @@ python tools/test.py configs_voc/sparse_rcnn/sparse-rcnn_r50_fpn_1x_coco.py work
 bash tools/dist_test.sh \
   configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py \
   8
-
+```
+```bash
 bash tools/dist_test.sh \
    configs_voc/mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py \
    work_dirs/mask-rcnn_r50_fpn_1x_coco/epoch_50.pth \
