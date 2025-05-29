@@ -138,3 +138,4 @@ python inference.py
 ## 训练模型
 
 本项目的训练模型已上传至以下链接:
+https://pan.baidu.com/s/1gOaJODKnvjeBesK4QI2YLw?pwd=8848 
