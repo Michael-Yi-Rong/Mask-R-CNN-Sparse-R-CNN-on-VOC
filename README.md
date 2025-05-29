@@ -26,6 +26,7 @@ Mask-R-CNN-Sparse-R-CNN-on-VOC/
 │
 ├── Other MMDetection Files & Folders...
 │
+├── simulate_proposals.py        # 展示Proposal脚本
 ├── inference.py                 # 推理脚本
 ├── voc2coco.py                  # VOC2COCO脚本
 ├── requirements.txt             # 环境配置
